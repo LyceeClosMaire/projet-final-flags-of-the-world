@@ -12,15 +12,9 @@ amerique_du_sud = []
 amerique_du_nord =[]
 drapeau_facile = ["États-Unis d'Amérique", "Israël", "Canada", "Japon", "République de Corée", "Chine", "Australie", "Brésil", "Afrique du sud", "Mexique", "Argentine", "Liban", "Tunisie", "Inde", "Égypte", "Venezuela", "Algérie", "Iran", "Népal", "Rwanda", "Myanmar", "Colombie", "Bangladesh", "Tanzanie", "Afghanistan", "Kenya", "Pérou", "République Démocratique du Congo", "Arabie Saoudite", "Pakistan", "Libye", "Cambodge", "Panama", "Chili", "Mongolie", "Philippines", "Bahreïn", "Koweït"]
 
+verrification = True
 
-print("Par quel niveau de difficulté voulez-vous commencer ? \n   facile \n   moyen \n   difficile \n")
-difficulter = input("Quelle difficulté voulez-vous ?")
-
-print("combien de pays voulez-vous ? \n")
-nb_pays = int(input("nombre de pays souhaiter ="))
-
-
-dossier_de_travail = "\\DC1-0210006T\SI - Echange\ISN\Projet Final\Projet final B.L.L. Flags of the world"
+dossier_de_travail = "\\DC1-0210006T\SI%20-%20Echange\ISN\Projet%20Final\Projet%20final%20B.L.L.%20Flags%20of%20the%20world\pays-du-monde.csv"
 os.chdir(dossier_de_travail)
 
 nom_csv = "pays-du-monde.csv"
@@ -29,14 +23,13 @@ fichier_csv = open("pays-du-monde.csv", mode='r', newline='')
 
 entree_csv = csv.reader(fichier_csv, dialect='excel')
 
-donnees = []
+donnees = [continent,capital]
 
 for ligne in entree_csv:
-   print(ligne)
-   donnees.append(ligne)
+    print(ligne)
+    donnees.append(ligne)
 
 fichier_csv.close()
-
 
 print("Par quel niveau de difficulté voulez-vous commencer ? \n   facile \n   moyen \n   difficile \n")
 difficulter = input("Quelle difficulté voulez-vous ?")
@@ -88,3 +81,15 @@ while nb_pays >0:
         print(selection_pays)
         print("\n")
 
+    while verrification:
+        reponse_pays = input("donne le drapeau de ce drapeau")
+        reponse_capital = input("donne la capital de ce drapeau")
+        if reponse_pays == selection_pays:
+            print("bien joué tu a gagné un point ")
+        else :
+            print("ce n'est pas le bon pays \n c'etait : ", selection_pays)
+        if reponse_capital == capital:
+            print("bien joué tu a gagné un point ")
+        else :
+            print("ce n'est pas la bonne capital \n la capital était : ", capital)
+            break

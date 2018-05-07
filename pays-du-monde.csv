@@ -1,3 +1,51 @@
-;Russie;Russie;Allemagne;Pologne;Italie;Pays-Bas;Turquie;Turquie;Ukraine;Royaume-Unis;Roumanie;France;Espagne;B‚larus;R‚publique TchŠque;Belgique;Portugal;GrŠce;Hongrie;SuŠde;Autriche;Suisse;Croatie;Slovaquie;Bulgarie;R‚publique de Serbie;Danemark;Finlande;Irlande;Bosnie-Herz‚govine;NorvŠge;Albanie;Estonie;Slov‚nie;Ancienne R‚publique Yougoslave de Mac‚doine;Moldavie;Lettonie;Kosovo;Chypre;Lituanie;R‚publique du Mont‚n‚gro;Luxembourg;Islande;Andorre;Liechtenstein;Monaco;Saint-Marin;Etat de la cit‚ du Vatican;Malte;Honduras;Antigua-et-Barbuda;R‚publique du Congo
-continent;europe;asie;europe;europe;europe;europe;europe;asie;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;europe;am‚rique du nord;am‚rique du nord;Afrique
-capitale;Moscou;Moscou;Berlin;Varsovie;Rome;Amsterdam;Ankara;Ankara;Kiev;Londres;Bucarest;Paris;Madrid;Minsk;Prague;Bruxelles;Lisbonne;AthŠnes;Budapest;Stockholm;Vienne;Berne;Zagreb;Bratislava;Sofia;Belgrade;Copenhague;Helsinki;Dublin;Sarajevo;Oslo;Tirana;Tallinn;Ljubljana;Skopje;Chisinau;Riga;Pristina;Nicosie;Vilnius;Podgorica;Luxembourg;Reykjavik;Andorre-la-Vieille;Vaduz;Monaco;Saint-Marin;Cit‚ du Vatican;La Valette;Tegucigalpa;Saint John's;Brazzaville
+pays;continent;capital
+Russie;asie;Moscou
+Allemagne;europe;Berlin
+Pologne;europe;Varsovie
+Italie;europe;Rome
+Pays-Bas;europe;Amsterdam
+Turquie;asie;Ankara
+Ukraine;europe;Kiev
+Royaume-Unis;europe;Londres
+Roumanie;europe;Bucarest
+France;europe;Paris
+Espagne;europe;Madrid
+Belarus;europe;Minsk
+Republique Tcheque;europe;Prague
+Belgique;europe;Bruxelles
+Portugal;europe;Lisbonne
+Grece;europe;Athenes
+Hongrie;europe;Budapest
+Suede;europe;Stockholm
+Autriche;europe;Vienne
+Suisse;europe;Berne
+Croatie;europe;Zagreb
+Slovaquie;europe;Bratislava
+Bulgarie;europe;Sofia
+Republique de Serbie;europe;Belgrade
+Danemark;europe;Copenhague
+Finlande;europe;Helsinki
+Irlande;europe;Dublin
+Bosnie-Herzegovine;europe;Sarajevo
+Norvege;europe;Oslo
+Albanie;europe;Tirana
+Estonie;europe;Tallinn
+Slovenie;europe;Ljubljana
+Ancienne Republique Yougoslave de Macedoine;europe;Skopje
+Moldavie;europe;Chisinau
+Lettonie;europe;Riga
+Kosovo;europe;Pristina
+Chypre;europe;Nicosie
+Lituanie;europe;Vilnius
+Republique du Montenegro;europe;Podgorica
+Luxembourg;europe;Luxembourg
+Islande;europe;Reykjavik
+Andorre;europe;Andorre-la-Vieille
+Liechtenstein;europe;Vaduz
+Monaco;europe;Monaco
+Saint-Marin;europe;Saint-Marin
+Etat de la cite du Vatican;europe;Cite du Vatican
+Malte;europe;La Valette
+Honduras;amerique du nord;Tegucigalpa
+Antigua-et-Barbuda;amerique du nord;Saint John's
+Republique du Congo;Afrique;Brazzaville

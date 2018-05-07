@@ -33,13 +33,15 @@ drapeau_facile = ["États-Unis d'Amérique", "Israël", "Canada", "Japon", "Rép
 asie = ["Afghanistan", "Arabie Saoudite", "Arménie", "Azerbaïdjan", "Bahreïn", "Bangladesh", "Bhoutan", "Brunei", "Cambodge", "Chine", "République de Corée", "République Populaire Démocratique de Corée", "Émirats Arabes unis", "Géorgie", "Inde", "Indonésie", "Iraq", "Iran", "Israël", "Japon", "Jordanie", "Kazakhstan", "Kirghizistan", "Koweït", "Laos", "Liban", "Malaisie", "Maldives", "Mongolie", "Myanmar", "Népal", "Oman", "Ouzbékistan", "Pakistan", "Philippines", "Qatar", "Russie", "Singapour", "Sri Lanka", "Syrie", "Tadjikistan", "Thaïland", "République Democratique du Timor Oriental", "Turkménistan", "Turquie", "Viet Nam", "Yémen", ]
 afrique = ["Afrique du sud", "Algérie", "Angola", "Bénin", "Botswana", "Burkina Faso", "Burundi", "Cameroun", "Cap-Vert", "Comores", "République Démocratique du Congo", "République du Congo", "Djibouti", "Égypte", "Érythrée", "Éthiopie", "Gabon", "Gambie", "Ghana", "Guinée", "Guinée-Bissau", "Guinée Équatoriale", "Kenya", "Lesotho", "Liberia", "Libye", "Madagascar", "Malawi", "Mali", "Maroc", "Maurice", "Mauritanie", "Mozambique", "Namibie", "Niger", "Nigéria", "Ouganda", "République Centrafricaine", "Rwanda", "São-Tomé-et-Príncipe", "Sénégal", "Seychelles", "Sierra Leone", "Somalie", "Soudan", "République du Soudan du sud", "Swaziland", "Tanzanie", "Tchad", "Togo", "Tunisie", "Zambie", "Zimbabwe"]
 océanie = ["Australie", "Fidji", "Îles Salomon", "Îles Marshall", "Kiribati", "Micronésie", "Nauru", "Nouvelle-Zélande", ]
+amerique_du_sud = []
+amerique_du_nord =[]
 
 
-def questions(continent):
+if europe==1:
 
-    return (pays, question1, reponse1, question2, reponse2)
 
-if continent==europe:
+    Question1=["Quelle est la superfcie de ce pays?"]
+    Question2=["Combien d'habitants y a-t-il dans ce pays?"]
 
     dossier_de_travail = "\\DC1-0210006T\SI - Echange\ISN\Projet Final\Projet final B.L.L. Flags of the world"
     os.chdir(dossier_de_travail)
@@ -50,16 +52,40 @@ if continent==europe:
 
     entree_csv = csv.reader(fichier_csv, dialect='excel')
 
-    # donnees = [[pays,superficie,population]]
-    donnees = []
+    donnees = [superficie,population]
 
     for ligne in entree_csv:
         print(ligne)
-        donnees.append(ligne)
+    donnees.append(ligne)
 
     fichier_csv.close()
 
-if continent==asie:
+if drapeau_facile==1:
+
+    Question1=["Quelle est la superfcie de ce pays?"]
+    Question2=["Combien d'habitants y a-t-il dans ce pays?"]
+
+    dossier_de_travail = "\\DC1-0210006T\SI - Echange\ISN\Projet Final\Projet final B.L.L. Flags of the world"
+    os.chdir(dossier_de_travail)
+
+    nom_csv = "Drapeau-facile.csv"
+
+    fichier_csv = open(Drapeau-facile.csv, mode='r', newline='')
+
+    entree_csv = csv.reader(fichier_csv, dialect='excel')
+
+    donnees = [superficie,population]
+
+    for ligne in entree_csv:
+        print(ligne)
+    donnees.append(ligne)
+
+    fichier_csv.close()
+
+if asie==1:
+
+    Question2=["Combien d'habitants y a-t-il dans ce pays?"]
+    Question3=["Quelle est la langue offcielle de ce pays?"]
 
     dossier_de_travail = "\\DC1-0210006T\SI - Echange\ISN\Projet Final\Projet final B.L.L. Flags of the world"
     os.chdir(dossier_de_travail)
@@ -78,7 +104,10 @@ if continent==asie:
 
     fichier_csv.close()
 
-if continent==afrique:
+if afrique==1:
+
+    Question4=["IDH par habitant de ce pays"]
+    Question5=["Quel est le fuseau horaire de ce pays?"]
 
     dossier_de_travail = "\\DC1-0210006T\SI - Echange\ISN\Projet Final\Projet final B.L.L. Flags of the world"
     os.chdir(dossier_de_travail)
@@ -89,7 +118,7 @@ if continent==afrique:
 
     entree_csv = csv.reader(fichier_csv, dialect='excel')
 
-    donnees = [IDH,fuseau-horaire]
+    donnees = [IDH,fuseau.horaire]
 
     for ligne in entree_csv:
         print(ligne)
@@ -97,7 +126,10 @@ if continent==afrique:
 
     fichier_csv.close()
 
-if continent==europe:
+if oceanie==1:
+
+    Question4=["IDH de ce pays"]
+    Question5=["Quel est le fuseau horaire de ce pays?"]
 
     dossier_de_travail = "\\DC1-0210006T\SI - Echange\ISN\Projet Final\Projet final B.L.L. Flags of the world"
     os.chdir(dossier_de_travail)
@@ -108,7 +140,7 @@ if continent==europe:
 
     entree_csv = csv.reader(fichier_csv, dialect='excel')
 
-    donnees = [IDH,fuseau-horaire]
+    donnees = [IDH,fuseau.horaire]
 
     for ligne in entree_csv:
         print(ligne)

@@ -20,7 +20,7 @@ nb_pays = int(input("nombre de pays souhaiter ="))
 print("Dans quel continent vivez-vous ? \n   -europe \n   -asie \n   -afrique \n   -océanie \n   -amérique du sud \n   -amérique du nord \n")
 continent_originaire = input("je vie en ")
 
-while nb_pays >0:
+while nb_pays > 0:
 
     if difficulter == "facile":
         essaie = 0
